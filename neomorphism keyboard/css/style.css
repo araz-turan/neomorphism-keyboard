@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    background: #dce0e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.board-back {
+    background: #dce0e8;
+    border-radius: 0.5rem;
+    box-shadow: -0.2rem -0.2rem 0.5rem #ffff, 0.1rem 0.1rem 0.5rem #868686;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.key-section {
+    max-width: 100%;
+    min-height: 30%;
+    margin: 1rem;
+    padding: 0.5rem;
+}
+.row {
+    display: flex;
+    justify-content: center;
+}
+input {
+    font-family: 'Lato', sans-serif;
+    color: #4f5258;
+    border: none;
+    margin: 0.4rem;
+    background: #dce0e8;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 0.25rem;
+    box-shadow: -0.1rem -0.1rem 0.5rem #ffff, 0.1rem 0.1rem 0.5rem #868686;
+}
+input:focus {
+    background: #e7ebf3;
+    color: #6095ff;
+    box-shadow: -0.1rem -0.1rem 0.5rem #ffff inset, 0.1rem 0.1rem 0.5rem #868686 inset;
+}
+.row-4 input {
+    width: 55%;
+}
+@media screen and (max-width: 767.98px){
+    .key-section {
+        margin: 0.75rem;
+        padding: 0.25rem;
+    }
+    input {
+        margin: 0.3rem;
+        background: #dce0e8;
+        width: 2rem;
+        height: 2rem;
+    }
+}
+@media screen and (max-width: 575.98px){
+    .board-back {
+        box-shadow: -0.1rem -0.1rem 0.25rem #ffff, 0.05rem 0.05rem 0.25rem #868686;
+    }
+    .key-section {
+        margin: 0.1rem;
+        padding: 0.1rem;
+    }
+    input {
+        margin: 0.15rem;
+        background: #dce0e8;
+        width: 1.5rem;
+        height: 1.5rem;
+        font-size: 0.75rem;
+        box-shadow: -0.05rem -0.05rem 0.25rem #ffff, 0.05rem 0.05rem 0.25rem #868686;
+    }
+}
